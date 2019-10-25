@@ -16,3 +16,9 @@ use Illuminate\Http\Request;
 Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
+
+Route::post('create_booking', 'HomeController@postCreateBookings');
+Route::post('cancel_booking', 'HomeController@postCancelBookings');
+Route::post('all_booking', 'HomeController@getBookings');
+Route::post('accept_booking', 'HomeController@postAcceptBookings');
+

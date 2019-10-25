@@ -14,3 +14,6 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+
+//Route::post('create_booking', array('as' => 'create.booking', 'uses' => 'HomeController@postCreateBookings'));
